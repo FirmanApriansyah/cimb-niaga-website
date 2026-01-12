@@ -9,6 +9,8 @@ import App from './App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <div className='overflow-x-hidden max-w-full'>
       <App />
+    </div>
   </StrictMode>,
 )
