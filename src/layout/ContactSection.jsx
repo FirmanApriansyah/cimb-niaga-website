@@ -161,7 +161,7 @@ export default function ContactSection({ id }) {
 
           {/* Contact Card */}
           <motion.div
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }}
