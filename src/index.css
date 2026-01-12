@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.body, .html  {
+    @apply overflow-x-hidden
+}
+
+.container {
+    @apply mx-auto max-w-7xl px-4;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes float-delayed {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.animate-float {
+    animation: float 10s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float-delayed 20s ease-in-out infinite 2s;
+}
+
+.animate-float-slow {
+    animation: float 20s ease-in-out infinite 4s;
+}
+
+@layer base {
+    body {
+        font-family: Inter, system-ui, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: Poppins, system-ui, sans-serif;
+    }
+}
